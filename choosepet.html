@@ -1,0 +1,24 @@
+<form id="pet-form">
+    <label for="pet-select">Choose a Pet</label>
+    <select name="pets" id="pet-select">
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="parrot">Parrot</option>
+    </select>
+  
+    <button type="submit">Submit</button>
+  </form>
+  
+  <label for="lunch-select">Choose your Lunch</label>
+  <select name="lunch" id="lunch-select">
+    <option value="salad">Salad</option>
+    <option value="sandwich">Sandwich</option>
+  </select>
+
+  <script>
+    const petSelect = document.getElementById("pet-select");
+    const petForm = petSelect.form; // <form id="pet-form">
+  
+    const lunchSelect = document.getElementById("lunch-select");
+    const lunchForm = lunchSelect.form; // null
+  </script>
